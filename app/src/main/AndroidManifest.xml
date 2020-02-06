@@ -12,17 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".flowlayout.FlowActivity"></activity>
-        <activity android:name=".chess.ChessActivity">
+        <activity android:name=".puzzle.PuzzleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".flowlayout.FlowActivity" />
+        <activity android:name=".chess.ChessActivity">
+        </activity>
         <activity android:name=".zoomimageview.ZoomActivity" />
         <activity android:name=".imageloader.PictureActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
