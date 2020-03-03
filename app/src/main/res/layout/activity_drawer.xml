@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer.DrawerActivity">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                app:layout_scrollFlags="scroll"
+                android:src="@drawable/selected"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                app:layout_scrollFlags="noScroll"
+                android:text="headView"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/bound"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                android:id="@+id/drawer_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
