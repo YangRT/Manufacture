@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':plugin', ':apt-annotation', ':apt-processor', ':apt-library'
 rootProject.name='Manufacture'

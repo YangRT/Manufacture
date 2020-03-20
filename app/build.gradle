@@ -31,4 +31,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
     implementation 'com.google.android:flexbox:1.0.0'
     implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation project(':apt-annotation')
+    implementation project(':apt-library')
+    annotationProcessor project(':apt-processor')
 }
