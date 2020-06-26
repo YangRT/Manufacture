@@ -24,12 +24,14 @@ import javax.lang.model.util.Elements;
 import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;
 
-@AutoService(Processor.class)
+
 public class BindViewProcessor extends AbstractProcessor {
 
     private Messager messager;
     private Elements elementUtils;
     private Map<String,ClassCreatorProxy> proxyMap = new HashMap<>();
+
+    public BindViewProcessor(){}
 
     //初始化。可以得到ProcessingEnviroment，
     // ProcessingEnviroment提供很多有用的工具类Elements, Types 和 Filer

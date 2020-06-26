@@ -3,7 +3,6 @@ package com.yang.apt_processor;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,7 +40,7 @@ public class ClassCreatorProxy {
     public String generateJavaCode() {
         StringBuilder builder = new StringBuilder();
         builder.append("package ").append(mPackageName).append(";\n\n");
-        builder.append("import com.example.gavin.apt_library.*;\n");
+        builder.append("import com.yang.apt_library.*;\n");
         builder.append('\n');
         builder.append("public class ").append(mBindingClassName);
         builder.append(" {\n");
